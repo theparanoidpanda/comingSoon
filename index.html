@@ -6,6 +6,17 @@
 
         <!-- Material Icon CSS Link-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-82M7735Q0P"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-82M7735Q0P');
+        </script>
 
         <style>
             body, html {
@@ -33,7 +44,9 @@
             .bottomleft {
             position: absolute;
             bottom: 0;
-            left: 16px;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
             }
 
             .middle {
@@ -48,6 +61,16 @@
             margin: auto;
             width: 40%;
             }
+            
+            .material-icons.md-48 { 
+            font-size: 48px; 
+            }
+            
+            small {
+                font-size: 15px;
+            }
+            
+            
         </style>
 
     </head>
@@ -61,18 +84,21 @@
             <div class="middle">
                 <h1>COMING SOON</h1>
                 <hr>
-                <p id="demo" style="font-size:30px"></p>
+                <p id="demo" style="font-size:30px"></p><br />
+                <a href="https://www.facebook.com/TheParanoidPanda" target="_blank"><span class="large material-icons md-48" style="color:white">facebook</span></a>
+                <a href="https://www.instagram.com/TheParanoidPanda" target="_blank"><span class="large material-icons md-48" style="color: white">camera_alt</span></a>
+                <a href="mailto:admin@paranoidpanda.com"><span class="large material-icons md-48"style="color: white;">alternate_email</span></a>
             </div>
             <div class="bottomleft">
-                <a href="https://www.facebook.com/TheParanoidPanda" target="_blank"><span class="material-icons">facebook</span></a>
-                <a href="https://www.instagram.com/TheParanoidPanda" target="_blank"><span class="material-icons">camera_alt</span></a>
-
+                <footer> 
+                    <small>&copy; Copyright 2020, Paranoid Panda Ltd</small> 
+                </footer> 
             </div>
         </div>
 
         <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Dec 25, 2020 12:00:00").getTime();
+        var countDownDate = new Date("May 01, 2021 12:00:00").getTime();
 
         // Update the count down every 1 second
         var countdownfunction = setInterval(function() {
